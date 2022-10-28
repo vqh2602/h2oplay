@@ -1,10 +1,22 @@
+
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'modules/routers.dart';
 import 'modules/splash_screen/splash_screen.dart';
 
+class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
+  }
+}
 void main() {
+  HttpOverrides.global = MyHttpOverrides();
   runApp(const MyApp());
 }
 
@@ -31,9 +43,10 @@ class MyApp extends StatelessWidget {
       ),
       getPages: routes,
       //initialBinding: AuthBinding(),
-      //home: SplashScreen(),
-      initialRoute: SplashScreen.routeName,
+      //home: PlayMediaScreen(),
+       initialRoute: SplashScreen.routeName,
     );
   }
 }
+
 

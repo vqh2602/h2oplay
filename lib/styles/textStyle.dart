@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 TextStyle textBody(Color? color){
   return GoogleFonts.notoSans(
-    fontSize: 30,
+    fontSize: 35,
     color: color,
     // fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
@@ -11,7 +11,7 @@ TextStyle textBody(Color? color){
 }
 TextStyle textBodyBold(Color? color){
   return GoogleFonts.notoSans(
-    fontSize: 48,
+    fontSize: 40,
     color: color,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
@@ -19,14 +19,22 @@ TextStyle textBodyBold(Color? color){
 }
 TextStyle textTitle(Color? color){
   return GoogleFonts.notoSans(
-    fontSize: 48,
+    fontSize: 50,
     color: color,
     fontStyle: FontStyle.normal,
   );
 }
 TextStyle textTitleBold(Color? color){
   return GoogleFonts.notoSans(
-    fontSize: 60,
+    fontSize: 55,
+    color: color,
+    fontWeight: FontWeight.w700,
+    fontStyle: FontStyle.normal,
+  );
+}
+TextStyle textLabel(Color? color){
+  return GoogleFonts.notoSans(
+    fontSize: 25,
     color: color,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,

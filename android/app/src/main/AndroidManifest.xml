@@ -1,16 +1,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vqh2602.h2oplay">
     <uses-feature android:name="android.software.leanback"
-        android:required="false" />
-    <uses-feature android:name="android.hardware.touchscreen"
-        android:required="false" />
+        android:required="true" />
+    <uses-feature android:name="android.hardware.screen.landscape"
+        android:required="true" />
+    <uses-configuration android:reqFiveWayNav="true" />
+    <uses-configuration android:reqNavigation="dpad" />
+    <uses-configuration android:reqTouchScreen="finger" />
+<!--    <uses-feature android:name="android.hardware.touchscreen"-->
+<!--        android:required="false" />-->
     <uses-permission android:name="android.permission.INTERNET"/>
 
    <application
         android:label="h2oplay"
         android:name="${applicationName}"
         android:banner="@drawable/banner"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon"
+        android:usesCleartextTraffic="true">
         <activity
             android:name="com.vqh2602.h2oplay.MainActivity"
             android:exported="true"

@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:h2oplay/modules/home_screen/home_screen.dart';
 import 'package:h2oplay/styles/textStyle.dart';
 
+import '../key_screen/key_screen.dart';
+
 class SplashScreen extends StatefulWidget {
   static const String routeName = '/SplashScreen';
   const SplashScreen({super.key});
@@ -22,7 +24,7 @@ class _MySplashScreen extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(const Duration(seconds: 3), () {
-      Get.offNamed(HomeScreen.routeName);
+      Get.offNamed(KeyScreen.routeName);
     });
   }
   @override

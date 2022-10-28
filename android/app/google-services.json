@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "346643703702",
+    "project_id": "h20play",
+    "storage_bucket": "h20play.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346643703702:android:c040ebc91dc2ce62635fb7",
+        "android_client_info": {
+          "package_name": "com.vqh2602.h2oplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346643703702-i24ngtdik35120ssjuu28gru8uisir8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlH0Eg-uo_UWJVyPtjPPwuVKu6LsLI0Uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346643703702-i24ngtdik35120ssjuu28gru8uisir8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
