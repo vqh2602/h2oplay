@@ -1,6 +1,8 @@
 # h2oplay
 
 ung dung xem phim tv
+vuong quang huy 19a02
+nguyen cong chinh - 19a03
 
 ## Getting Started
 
